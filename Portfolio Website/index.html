@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/189bc17b67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Ayman.</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" style="--i:1;">Home</a></li>
+                <li><a href="#about" style="--i:2;">About</a></li>
+                <li><a href="#services" style="--i:3;">Skills</a></li>
+                <li><a href="#projects" style="--i:4;">Projects</a></li>
+                <li><a href="#contact" style="--i:5;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ayman Haseeb</h1>
+            <h3>And I'm a <span>Machine Learning Enthusiast.</span></h3>
+            <p>Passionate about the future of learning technology, I'm on a journey to merge machine learning with education, one algorithm at a time.</p>
+
+            <div class="social-media">
+                <a href="https://github.com/Aymmaann" target="_blank" style="--i:6;"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/ayman-haseeb-4281a1251/" target="_blank" style="--i:7;"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://medium.com/me/stories/drafts" target="_blank" style="--i:8;"><i class='bx bxl-medium' ></i></a>
+                <a href="https://www.instagram.com/_aymaaaaan___/" target="_blank" style="--i:9;"><i class='bx bxl-instagram' ></i></a>
+            </div>
+
+            <a href="Resume_copy.pdf" class="btn" download="Resume_copy.pdf">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="home.png" alt="" width="700px" border-radius="10px">
+        </div>
+
+    </section>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.png" alt="" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Ayman Haseeb, a machine learning enthusiast with a passion for front-end development. I hold the AI-900 certification badge from Microsoft and have experience in machine learning and deep learning. In addition to my internships, I've completed several courses and industrial training programs, further fueling my expertise.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI/ML</span><br>Developing intricate Machine Learning models</li>
+                            <li><span>Front End Development</span><br>Designing aesthetic websites using HTML, CSS and JavaScript</li>
+                            <li><span>Competitive Coding</span><br>Obtaining innovative solutions for your problems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Technical Member at Data Science Community SRM</li>
+                            <li><span>Oct 2023 - Current</span><br>RoboAI Industrial Training from TechAnalogy, MyEquation</li>
+                            <li><span>July 2023 - Aug 2023</span><br>Front End Web Development intern at YHills</li>
+                            <li><span>April 2023</span><br>Reached the final round of SRM Hackathon 7.0</li>
+                            <li><span>Nov 2022 - Jan 2023</span><br>AI/ML Industrial Training from Coincent, Microsoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>Btech CSE Cloud Computing Student at SRM University<br>
+                            <br> CGPA: <br> 1st Semester: 9.72 <br> 2nd Semester: 9.54 <br> 3rd Semester: Ongoing....
+                            </li>
+                            <li><span>2020 - 2022</span><br>Sanjos Metropolitan School</li>
+                            <li><span>2017 - 2020</span><br>Mount Guide International School</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title skill">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI/ML</h2>
+                    <p>I'm proficient in AI/ML techniques, with hands-on experience in developing predictive models and a strong foundation in machine learning concepts.</p>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Front End Web Development</h2>
+                    <p>I have a solid grasp of front-end web development, with expertise in HTML, CSS, and JavaScript. I'm skilled in creating responsive and user-friendly web interfaces.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Competitive Coding</h2>
+                    <p>I'm proficient in Python, C, and C++. I've tackled challenging problems on platforms like LeetCode and HackerRank, honing my algorithmic and problem-solving skills.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title projects">My Projects</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <h2>Currency Converter using API</h2>
+                    <p>A Python project utilizing an API for real-time currency conversion. Convert, check exchange rates, and list currencies with a user-friendly command-line interface.</p>
+                    <br><a href="https://github.com/Aymmaann/Python_Projects/tree/main/Currency%20Converter" target="_blank">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-skull-crossbones"></i>
+                    <h2>Exploratory Data Analysis on Terror Attacks</h2>
+                    <p>This Python Jupyter notebook project conducts an in-depth Exploratory Data Analysis on global terror attacks. It explores patterns, trends, and insights from the data, shedding light on the dynamics of terrorism worldwide.</p>
+                    <br><a href="https://github.com/Aymmaann/Machine_Learning/tree/main/Exploratory%20Data%20Analysis%20on%20Terror%20Attacks" target="_blank">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Student Performance Analysis and Prediction</h2>
+                    <p>A supervised machine learning model is employed to analyze and predict student performance. By examining various factors, it provides valuable insights and predictions to help enhance educational outcomes.</p>
+                    <br><a href="https://github.com/Aymmaann/Machine_Learning/tree/main/Student%20Performance%20Analysis" target="_blank">Learn more</a>
+                </div>
+            </div>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-magento"></i>
+                    <h2>Shortest path finder through a maze</h2>
+                    <p>This Python project is designed to find the shortest path through a maze. Using algorithmic techniques, it navigates mazes and calculates the most efficient route, making it a handy tool for solving maze-based puzzles and pathfinding challenges.</p>
+                    <br><a href="https://github.com/Aymmaann/Python_Projects/tree/main/Finding%20shortest%20path%20through%20a%20maze" target="_blank">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-shoe-prints"></i>
+                    <h2>Suedes E-commerce Store</h2>
+                    <p>This HTML, CSS, and JavaScript project showcases a variety of suede sneakers for sneaker enthusiasts. Browse, view details, and easily make selections in this visually appealing online store, designed for sneaker lovers."</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-seedling"></i>
+                    <h2>Iris Classifier Project</h2>
+                    <p>This Python Jupyter notebook project features an Iris flower classifier trained using unsupervised machine learning algorithms. It effectively categorizes Iris flowers based on their features, serving as a practical tool for species classification and data exploration.</p>
+                    <br><a href="https://github.com/Aymmaann/Machine_Learning/tree/main/Iris%20Classifier" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title skill">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>  aymanhaseeb8121@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  884-809-7684</p>
+                    <div class="social-media">
+                        <a href="https://github.com/Aymmaann" target="_blank" style="--i:6;"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.linkedin.com/in/ayman-haseeb-4281a1251/" target="_blank" style="--i:7;"><i class='bx bxl-linkedin-square' ></i></a>
+                        <a href="https://medium.com/me/stories/drafts" target="_blank" style="--i:8;"><i class='bx bxl-medium' ></i></a>
+                        <a href="https://www.instagram.com/_aymaaaaan___/" target="_blank" style="--i:9;"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

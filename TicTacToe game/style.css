@@ -1,0 +1,87 @@
+* {
+    background-color: #141E46;
+    color: white;
+}
+
+@font-face {
+    font-family: RetroGaming;
+    src: url('RetroGaming.ttf');
+}
+
+body {
+    font-family: RetroGaming;
+}
+
+h1 {
+    margin: 40px auto;
+    padding: 20px 0;
+    background-color: #41B06E;
+    text-align: center;
+    width: 100vmin;
+    border-radius: 10px;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #fff;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+
+.text-container {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: RetroGaming;
+    /* margin: 4vmin 65vmin; */
+    margin: auto;
+    font-size: 2.3rem;
+    width: 45vmin;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    background-color: cadetblue;
+    font-family: RetroGaming;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 10vmin;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+
+.restart-container {
+    text-align: center;
+}
+
+.restart {
+    margin: auto;
+    padding: 15px 25px;
+    font-family: RetroGaming;
+    font-size: 1.2rem;
+    background-color: #41B06E;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+
+ .restart:hover {
+    background-color: #71c996;
+ }

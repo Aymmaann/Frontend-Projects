@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper and Scissors</title>
+</head>
+<body>
+    <nav>
+        <h1 class="nav-title">Rock Paper Scissors!</h1>
+    </nav>
+    <div class="game">
+        <!-- <img src="images/rock.png" alt="Rock" class="choices rock">
+        <img src="images/paper.png" alt="Paper" class="choices paper">
+        <img src="images/scissor.png" alt="Scissors" class="choices scissors"> -->
+        <div class="choices" id="rock">
+            <img src="images/rock.png" alt="Rock">
+        </div>
+        <div class="choices" id="paper">
+            <img src="images/paper.png" alt="Paper">
+        </div>
+        <div class="choices" id="scissors">
+            <img src="images/scissor.png" alt="Scissors">
+        </div>
+    </div>
+
+    <div class="board">
+        <h1>Scoreboard</h1>
+        <div class="scores">
+            <div class="user">
+                <h2>User</h2>
+                <h2 id="user-score">0</h2>
+            </div>
+            <div class="computer">
+                <h2>Computer</h2>
+                <h2 id="computer-score">0</h2>
+            </div>
+        </div>
+        <h1 class="game_message">Rock, Paper or Scissors?</h1>
+    </div>
+
+    <div class="reset-game">
+        <button class="reset-btn">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

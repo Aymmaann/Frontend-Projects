@@ -19,6 +19,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .nav-title {
@@ -56,6 +57,7 @@ img:hover{
     background-color: black;
     border-radius: 8px;
     font-family: RetroGaming;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .scores {
@@ -94,4 +96,11 @@ h2 {
     border: none;
     width: 30vmin;
     height: 8vmin;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.reset-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 29.8vmin;
+    height: 7.6vmin;
 }

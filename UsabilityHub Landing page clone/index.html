@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <title>Landing Page</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -37,13 +38,15 @@
                     <li><a href="#" class="hover-link primary-btn">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="navbar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 
     <!-- header section -->
     <header>
         <div class="container header-section flex">
-
             <div class="header-left">
                 <h1>Design Confidently.</h1>
                 <p>UsabilityHub is a remote user research platform that takes the guesswork out of design decisions by validating them with real users.</p>
@@ -53,7 +56,6 @@
             <div class="header-right">
                 <img src="./assets/asset 2.png" alt="hero image">
             </div>
-
         </div>
     </header>
 
@@ -81,7 +83,6 @@
                 <a href="" class="secondary-btn">See all features <i class="fa-solid fa-right-long"></i></a>
             </div>
             <div class="features-area flex">
-
                 <div class="features-card flex">
                     <img src="./assets/asset 11.svg" alt="">
                     <h3>Card Sorting</h3>
@@ -118,7 +119,6 @@
                     <p>Discover how people group and label information</p>
                     <a href="" class="secondary-btn">Learn more <i class="fa-solid fa-right-long"></i></a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -126,10 +126,10 @@
     <!-- Big Features Section -->
     <section class="big-features-section first-big-section">
         <div class="container big-features flex">
-            <div>
+            <div class="big-features-image">
                 <img src="./assets/asset 18.png" alt="">
             </div>
-            <div>
+            <div  class="big-features-text">
                 <h4>Effortless validation for</h4>
                 <h2>Design professionals</h2>
                 <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful experiences for your users.</p>
@@ -137,7 +137,7 @@
         </div>
     </section>
     <section class="big-features-section">
-        <div class="container big-features flex">
+        <div class="container big-features middle-big-feature flex">
             <div>
                 <h4>Effortless validation for</h4>
                 <h2>Design professionals</h2>
@@ -188,7 +188,7 @@
 
 
     <section class="cta-section">
-        <div class="cta-background flex">
+        <div class="cta-background container flex">
             <h2 class="cta-header">Start testing today</h2>
             <p class="cta-text">Take the guesswork out of design decisions</p>
             <a href="#" class="primary-btn">Get started</a>
@@ -196,40 +196,34 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer-background">
+    <footer>
         <div class="container footer flex">
             <div class="footer-text footer-image">
                 <img src="./assets/asset 1.png" alt="">
             </div>
             <div class="footer-text">
                 <h3>Product</h3>
-                    <ul>
-                        <li>Overview</li>
-                        <li>Pricing</li>
-                        <li>UsabilityHub panel</li>
-                        <li>Customers</li>
-                        <li>Status page</li>
-                    </ul>
+                <a href="" class="hover-link">Overview</a>
+                <a href="" class="hover-link">Pricing</a>
+                <a href="" class="hover-link">UsabilityHub panel</a>
+                <a href="" class="hover-link">Customers</a>
+                <a href="" class="hover-link">Status page</a>
             </div>
             <div class="footer-text">
                 <h3>Methodology</h3>
-                    <ul>
-                        <li>Overview</li>
-                        <li>Pricing</li>
-                        <li>UsabilityHub panel</li>
-                        <li>Customers</li>
-                        <li>Status page</li>
-                    </ul>
+                <a href="" class="hover-link">Overview</a>
+                <a href="" class="hover-link">Pricing</a>
+                <a href="" class="hover-link">UsabilityHub panel</a>
+                <a href="" class="hover-link">Customers</a>
+                <a href="" class="hover-link">Status page</a>
             </div>
             <div class="footer-text">
                 <h3>Resources</h3>
-                    <ul>
-                        <li>Overview</li>
-                        <li>Pricing</li>
-                        <li>UsabilityHub panel</li>
-                        <li>Customers</li>
-                        <li>Status page</li>
-                    </ul>
+                <a href="" class="hover-link">Overview</a>
+                <a href="" class="hover-link">Pricing</a>
+                <a href="" class="hover-link">UsabilityHub panel</a>
+                <a href="" class="hover-link">Customers</a>
+                <a href="" class="hover-link">Status page</a>
             </div>
         </div>
     </footer>
@@ -245,6 +239,8 @@
         </div>
     </div>
 
+    
     <script src="https://kit.fontawesome.com/189bc17b67.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

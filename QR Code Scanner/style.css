@@ -1,0 +1,55 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    color: hsl(218, 44%, 22%);
+    font-family: outfit;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.qr-code {
+    display: block;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    margin: 16px auto 0 auto;
+}
+
+.text-content {
+    padding: 5px;
+}
+
+.heading {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.heading h3 {
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+.text {
+    width: 90%;
+    text-align: center;
+    margin: 0px auto 0 auto;
+}
+
+.text p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}

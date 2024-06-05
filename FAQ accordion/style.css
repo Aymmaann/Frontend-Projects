@@ -81,3 +81,22 @@ article {
     line-height: 1.5rem;
     display: none;
 }
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    article {
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+    }
+}

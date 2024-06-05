@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--White);
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--Off-Black);
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    margin: 100px auto;
+    padding: 40px 35px 35px;
+    background-color: var(--Dark-Grey);
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+/* Profile image section */
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img img{
+    display: block;
+    border-radius: 50%;
+    height: 100px;
+}
+
+
+/* User name section */
+
+.user-name {
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.user-name p {
+    color: var(--Green);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Description */
+
+.description {
+    text-align: center;
+}
+
+/* Links */
+
+.link {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey);
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease-in;
+}
+
+.link:hover {
+    background-color: var(--Green);
+    color: var(--Dark-Grey);
+}
+
+
+.link:first-child {
+    margin-top: 25px;
+}

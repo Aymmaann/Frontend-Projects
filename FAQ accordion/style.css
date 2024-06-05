@@ -30,7 +30,7 @@ body {
     font-family: "Work Sans", sans-serif;
     background-color: var(--Light-pink);
     width: 100%;
-    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-image: url("./images/background-pattern-desktop.svg");
     background-position: cover;
     background-repeat: no-repeat;
 }

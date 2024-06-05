@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+a {
+    text-decoration: none;
+    color: var(--Black);
+    background-color: var(--Yellow);
+}
+
+h2 {
+    font-weight: 800;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+img {
+    display: block;
+}
+
+body {
+    background-color: var(--Yellow);
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+}
+
+main {
+    background-color: var(--White);
+    margin: 216px auto;
+    padding: 24px;
+    width: 382px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 9px 9px;
+}
+
+/* Card image section */
+
+.card-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Learning Button section */
+
+.learning {
+    margin: 23px 0 18px;
+}
+
+.learning-btn {
+    border-radius: 5px;
+    padding: 8px 13px;
+}
+
+/* Heading section */
+
+.heading {
+    margin: 25px 0 25px;
+}
+
+.heading h2 {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.heading h2:hover {
+    color: var(--Yellow);
+}
+
+.heading p {
+    color: var(--Grey);
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+/* Author section */
+
+.author {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.author img {
+    height: 30px;
+}
+
+.author-name {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 14px;
+    }
+    main {
+        width: 75%;
+    }
+    .learning-btn {
+        font-size: 14px;
+    }
+}

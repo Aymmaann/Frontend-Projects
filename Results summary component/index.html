@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+  <main>
+    <section class="result-section">
+      <h2 class="result-heading">Your Result</h2>
+      <section class="score">
+        <h1 class="final-score"></h1>
+        <h3>of 100</h3>
+      </section>
+      <section class="result">
+        <h2 class="result-text"></h2>
+        <p>You scored higher than <span class="result-percent">65%</span> of the people who have taken these tests.</p>
+      </section>
+    </section>
+
+    <section class="summary-section">
+      <h2 class="summary-heading">Summary</h2>
+
+      <section class="all-stats">
+        <section class="stat-section reaction">
+          <div class="stat">
+            <p class="stat-text reaction"><img src="./images/icon-reaction.svg" alt=""> Reaction</p>
+          </div>
+          <div class="stat-score">
+            <span><span class="your-score"><strong class="reaction-score"></strong>
+            </span class="max-score"> / 100</span>
+          </div>
+        </section>
+  
+        <section class="stat-section memory">
+          <div class="stat">
+            <p class="stat-text memory">
+              <img src="./images/icon-memory.svg" alt=""> Memory</p>
+          </div>
+          <div class="stat-score">
+            <span><span class="your-score"><strong class="memory-score"></strong>
+            </span class="max-score"> / 100</span>
+          </div>
+        </section>
+
+        <section class="stat-section verbal">
+          <div class="stat">
+            <p class="stat-text verbal">
+              <img src="./images/icon-verbal.svg" alt=""> Verbal</p>
+          </div>
+          <div class="stat-score">
+            <span><span class="your-score"><strong class="verbal-score"></strong>
+            </span class="max-score"> / 100</span>
+          </div>
+        </section>
+
+        <section class="stat-section visual">
+          <div class="stat">
+            <p class="stat-text visual">
+              <img src="./images/icon-visual.svg" alt=""> Visual</p>
+          </div>
+          <div class="stat-score">
+            <span><span class="your-score"><strong class="visual-score"></strong>
+            </span class="max-score"> / 100</span>
+          </div>
+        </section>
+      </section>
+
+      <section class="continue-section">
+        <a href="#" class="continue-btn">Continue</a>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

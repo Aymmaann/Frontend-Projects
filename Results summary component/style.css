@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobal-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+h1 {
+    color: var(--White);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h2, h3, p {
+    color: var(--Light-lavender);
+}
+
+a {
+    color: var(--White);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+body {
+    background-color: var(--Pale-blue);
+    font-family: "Hanken Grotesk", sans-serif;
+    color: var(--Dark-gray-blue);
+}
+
+span {
+    color: gray;
+    font-size: 18px;
+}
+
+main {
+    margin: 283px auto;
+    width: 735px;
+    border-radius: 30px;
+    background-color: var(--Light-lavender);
+    display: flex;
+    background-color: white;
+    text-align: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.result-section, .summary-section {
+    height: 100%;
+    width: 50%;
+}
+
+/* Result section */
+
+.result-section {
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    border-radius: 30px;
+    padding: 40px 60px 60px;
+}
+
+.score {
+    width: 200px;
+    height: 200px;
+    margin: 35px auto 30px;
+    background: linear-gradient(var(--Violet-blue-circle), var(--Persian-blue-circle));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score h3 {
+    color: hsl(241, 84%, 76%);
+}
+
+.final-score {
+    font-size: 5rem;
+}
+
+.result-text {
+    font-size: 28px;
+    color: var(--White);
+}
+.result-percent {
+    color: var(--Light-lavender);
+}
+
+.result p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+/* Summary section */
+
+.summary-section {
+    padding: 40px;
+    text-align: left;
+}
+
+.summary-heading {
+    color: var(--Dark-gray-blue);
+}
+
+.all-stats {
+    margin-top: 30px;
+}
+
+.stat-section {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.reaction {
+    background-color: #fff6f6;
+    color: var(--Light-red);
+}
+
+.memory {
+    background-color: #fffbf2;
+    color: var(--Orangey-yellow);
+}
+
+.verbal {
+    background-color: #f3fafa;color: var(--Green-teal);
+}
+
+.visual {
+    background-color: #f3f3fd;
+    color: var(--Cobal-blue);
+}
+
+.stat-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+}
+
+.your-score {
+    color: var(--Dark-gray-blue);
+}
+
+/* Continue Section */
+
+.continue-section {
+    width: 100%;
+    margin-top: 40px;
+    padding: 16px;
+    background-color: var(--Dark-gray-blue);
+    text-align: center;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.continue-section:hover {
+    background: linear-gradient(var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+}
+
+@media screen and (max-width: 842px) {
+    main {
+        width: 75%;
+        flex-direction: column;
+        margin: 100px auto;
+    }
+    .result-section, .summary-section {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    main {
+        margin: 0;
+        width: 100%;
+    }
+    .result-section {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        padding: 22px 60px 35px;
+        height: 40%;
+    }
+    .result-heading {
+        font-size: 18px;
+    }
+    .result-text {
+        font-size: 22px;
+    }
+    .result p, span {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    .score {
+        width: 140px;
+        height: 140px;
+    }
+    .score h3 {
+        font-size: 15px;
+    }
+    .final-score {
+        font-size: 50px;
+        font-weight: 800;
+    }
+}

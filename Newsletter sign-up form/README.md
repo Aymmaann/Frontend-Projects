@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Newsletter%20sign-up%20form)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://newsletter-sign-up-fe-mentor.netlify.app/)
 
 ## My process
 

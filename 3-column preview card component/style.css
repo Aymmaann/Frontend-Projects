@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Orange-text: #ffd472;
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Dark-Cyan-text: #a3dbe7;
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Very-Dark-Cyan-text: #a6d6d6;
+}
+
+h1 {
+    font-size: 37px;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.43rem;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+main {
+    margin: 170px auto;
+    width: 920px;
+    display: flex;
+    border-radius: 10px;
+}
+
+
+.card {
+    width: 100%;
+    padding: 48px;
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.heading {
+    margin-top: 36px;
+}
+
+.description {
+    margin-top: 30px;
+}
+
+.sedan-description {
+    color: var(--Orange-text);
+}
+
+.suv-description {
+    color: var(--Dark-Cyan-text);
+}
+
+.luxury-description {
+    color: var(--Very-Dark-Cyan-text);
+}
+
+button {
+    margin-top: 86px;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.25s ease-in-out;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+button:hover {
+    outline: 2px solid white;
+    color: white;
+}
+
+.sedan-btn {
+    color: var(--Bright-orange);
+}
+
+.sedan-btn:hover {
+    background-color: var(--Bright-orange);
+}
+
+.suv-btn {
+    color: var(--Dark-cyan);
+}
+
+.suv-btn:hover {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury-btn {
+    color: var(--Dark-cyan);
+}
+
+.luxury-btn:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 100px auto;
+        flex-direction: column;
+        width: 85%;
+        padding: 35px;
+    }
+    .sedan {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    main {
+        margin: 50px auto;
+        width: 96%;
+        padding: 25px;
+    }
+    button {
+        margin-top: 28px;
+    }
+}

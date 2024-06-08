@@ -12,9 +12,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-**Note: Add a screenshot of your solution. You can use tools like Firefox's built-in screenshot feature or FireShot to capture your solution. If you prefer not to include a screenshot, feel free to remove this section.**
+![](./images/screenshot.jpg)
 
 ### Links
 

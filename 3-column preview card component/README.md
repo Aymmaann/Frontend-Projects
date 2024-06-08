@@ -11,10 +11,14 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
+### Screenshot
+
+![Solution screenshot](./images/screenshot.jpg)
+
 ### Links
 
 - [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/3-column%20preview%20card%20component)
-- [Live Site]()
+- [Live Site](https://preview-card-component-fe-mentor.netlify.app/)
 
 ## My process
 

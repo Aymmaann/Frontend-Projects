@@ -17,7 +17,7 @@ Users should be able to:
 ### Links
 
 - [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Order%20summary%20component/images)
-- [Live Site]()
+- [Live Site](https://music-plan-component.netlify.app/)
 
 ## My process
 

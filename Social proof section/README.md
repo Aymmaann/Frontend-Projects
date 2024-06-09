@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - [GitHub Repo]](https://github.com/Aymmaann/Front-End-Development/tree/main/Social%20proof%20section)
-- [Live Site]()
+- [Live Site](https://social-proof-fe-mentor.netlify.app/)
 
 ## My process
 

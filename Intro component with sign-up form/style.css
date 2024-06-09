@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    /* Accent */
+    --Blue: hsl(248, 32%, 49%);
+    /* Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 3.6rem;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: var(--Red);
+    background-image: url("./images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+main {
+    /* margin: 120px 165px; */
+    padding: 120px 165px;
+    /* width: 1110px; */
+    gap: 76px;
+    display: flex;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section p {
+    margin-top: 28px;
+}
+
+.plan-btn {
+    width: 540px;
+    background-color: var(--Blue);
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    margin-top: 24px;
+    width: 540px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 9px;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    padding: 2px;
+    font-size: 14px;
+    padding: 15px 32px;
+    color: var(--Dark-Blue);
+}
+
+input::placeholder {
+    opacity: 0.9;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    background-color: var(--Green);
+    padding: 12px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-bottom: 4px solid hsla(154, 57%, 36%, 0.753);
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: hsl(154, 69%, 62%);
+    border-bottom: 0px;
+    transform: translateY(1px);
+}
+
+
+.terms-conditions {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--Grayish-Blue);
+    font-size: 0.65rem;
+    font-weight: 700;
+}
+
+.terms-conditions span {
+    color: var(--Red);
+}
+
+.error {
+    display: flex;
+    padding: 1px;
+    border: 1px solid hsla(249, 10%, 26%, 0.153);
+    border-radius: 5px;
+}
+
+.not-first {
+    margin-top: 20px;
+}
+
+.error-icon {
+    height: 24px;
+    margin-top: 14px;
+    margin-right: 25px;
+}
+
+.error-toggle { 
+    display: none;
+}
+
+.error-msg {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--Red);
+    font-weight: 500;
+    text-align: end;
+}
+
+.first-name-error, .last-name-error,  .email-error, .password-error, .first-name-error-icon, .last-name-error-icon, .email-error-icon, .password-error-icon {
+    display: none;
+}
+
+.first-name-error, .last-name-error,  .email-error, .password-error {
+    font-size: italic;
+}
+
+@media screen and (max-width: 1150px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-section {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        padding: 80px 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    main {
+        padding: 100px 50px;
+    }
+    .form-section {
+        width: 100%;
+    }
+    .form-container {
+        width: 100%;
+    }
+    .plan-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    main {
+        padding: 90px 24px;
+    }
+    .form-container {
+        padding: 24px;
+    }
+    .submit-btn {
+        font-size: 0.85rem;
+        letter-spacing: 1.2px;
+    }
+}

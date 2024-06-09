@@ -30,12 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./imagesscreenshot.jpg)
+![Screenshot](./images/screenshot.jpg)
 
 ### Links
 
 - [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Intro%20component%20with%20sign-up%20form)
-- [Live Site](https://your-live-site-url.com)
+- [Live Site]([https://your-live-site-url.com](https://intro-component-sign-up-form-fe.netlify.app/))
 
 ## My process
 

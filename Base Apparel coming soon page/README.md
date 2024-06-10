@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Base%20Apparel%20coming%20soon%20page)
-- [Live Site]()
+- [Live Site](https://base-apparel-coming-soon-fe.netlify.app/)
 
 ## My process
 

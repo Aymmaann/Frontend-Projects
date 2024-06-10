@@ -17,7 +17,7 @@ Users should be able to:
 ### Links
 
 - [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Four%20card%20feature%20section)
-- [Live Site](https://your-live-site-url.com)
+- [Live Site]([https://your-live-site-url.com](https://four-card-feature-section-fe.netlify.app/))
 
 ## My process
 

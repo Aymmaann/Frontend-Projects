@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red-Errors: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    color: var(--Very-dark-violet);
+}
+
+main {
+    display: flex;
+    padding: 187px 164px;
+}
+
+.card {
+    width: 447px;
+    height: 245px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: relative;
+    color: var(--White);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.card1 {
+    background-image: url("./images/bg-card-front.png");
+}
+
+.card2 {
+    margin-top: 37px;
+    margin-left: 94px;
+    background-image: url("./images/bg-card-back.png");
+}
+
+.card-text {
+    padding: 28px 32px;
+}
+
+.card-number {
+    margin-top: 62px;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 6px;
+}
+
+.name-date {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.card-cvv {
+    padding: 112px 56px;
+    width: 100%;
+    height: 100%; 
+}
+
+.card-cvv {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-align: end;
+}
+
+.form-section {
+    width: 100%;
+    padding: 83px 63px 53px 127px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    color: var(--Very-dark-violet);
+}
+
+input {
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: var(--Dark-grayish-violet);
+}
+
+.input {
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 7px;
+    margin-top: 8px;
+}
+
+.label {
+    margin-top: 24px;
+}
+
+.name-label {
+    margin-top: 0px;
+}
+
+.exp-date-section {
+    width: 50%;
+}
+
+.exp-date-input {
+    display: flex;
+    gap: 12px;
+}
+
+.exp-date-cvv {
+    display: flex;
+    gap: 22px;
+}
+
+button {
+    margin-top: 41px;
+    width: 100%;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    border: none;
+    border-radius: 7px;
+    padding: 17px;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.error-msg {
+    display: none;
+    margin-top: 7px;
+    color: var(--Red-Errors);
+    font-size: 0.688rem;
+}
+
+
+.complete-section {
+    display: none;
+    width: 100%;
+    padding: 118px 63px 118px 127px;
+    text-align: center;
+}
+
+.complete-section h1 {
+    margin-top: 35px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.complete-section p {
+    margin-top: 18px;
+    color: var(--Dark-grayish-violet);
+}
+
+.complete-section button {
+    margin-top: 46px;
+}
+
+@media screen and (max-width: 1420px) {
+    .form-section {
+        padding: 20px 63px 53px 127px;
+    }
+    .exp-date-section {
+        width: 100%;
+    }
+    .exp-date-cvv {
+        flex-direction: column;
+    }
+    .cvc-label {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .form-section {
+        padding: 20px 23px 53px 87px;
+    }
+    .card {
+        width: 350px;
+    }
+    .card1 {
+        height: 196.5px;
+    }
+    .card2 {
+        height: 191.5px;
+    }
+    .card-number {
+        margin-top: 32px;
+        font-size: 14px;
+    }
+    .name-date {
+        margin-top: 22px;
+    }
+    .card-cvv {
+        padding: 85px 46px;
+    } 
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        padding: 187px 100px 187px 154px;
+    }
+    .form-section {
+        padding: 20px 23px 53px 57px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    main {
+        padding: 147px 0px 187px 100px;
+    }
+    .card2 {
+        margin-left: 54px;
+    }
+    .form-section {
+        padding: 20px 80px 53px 57px;
+    }
+    .complete-section {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        padding: 147px 0px 187px 70px;
+    }
+    .form-section {
+        padding: 20px 50px 53px 57px;
+    }
+    .complete-section {
+        padding: 118px 47px 118px 57px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        background-image: url("./images/bg-main-mobile.png");
+        background-repeat: repeat-x;
+    }
+    main {
+        flex-direction: column;
+        padding: 27px 100px 60px 100px;
+        gap: 40px;
+    }
+    .card-section {
+        position: relative;
+    }
+    .card {
+        position: absolute;
+        height: 191.5px;
+    }
+    .card1 {
+        z-index: 2;
+        top: 120px;
+        left: 50px;
+    }
+    .card2 {
+        z-index: 1;
+        left: 204px;
+    }
+    .form-section {
+        padding: 20px 50px 53px 50px;
+    }
+    .form-section, .complete-section {
+        margin-top: 300px;
+    }
+    .complete-section {
+        padding: 70px 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        width: 230px;
+        height: 130px;
+        background-color: transparent;
+        box-shadow: 0px 0px white;
+    }
+    .card1 {
+        left: 100px;
+    }
+    .card2 {
+        left: 120px;
+    }
+    .card-text {
+        width: 230px;
+        padding: 14px 16px;
+    }
+    .card-text img {
+        height: 20px;
+    }
+    .card-number {
+        margin-top: 20px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .name-date {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+    .card-cvv {
+        padding: 57px 30px;
+    }
+    .card-cvc {
+        font-size: 8px;
+    }
+    .form-section {
+        padding: 20px 10px 53px;
+    }
+    .form-section, .complete-section {
+        margin-top: 250px;
+    }
+    .complete-section {
+        padding: 70px 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card1 {
+        left: 60px;
+    }
+    .card2 {
+        left: 80px;
+    }
+    .complete-section {
+        padding: 70px 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main {
+        padding: 27px 50px 60px 50px;
+    }
+    .card1 {
+        left: 40px;
+    }
+    .card2 {
+        left: 100px;
+    }
+    .complete-section {
+        padding: 70px 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        padding: 30px 16px;
+    }
+    .card1 {
+        left: 20px;
+    }
+    .card2 {
+        left: 30px;
+    }
+    .form-section, .complete-section {
+        margin-top: 220px;
+    }
+}

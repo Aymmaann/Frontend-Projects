@@ -24,12 +24,12 @@ The challenge was to create an Age Calculator App that allows users to input the
 
 ### Screenshot
 
-![Age Calculator App](./images/screenshot.jpg)
+![Age Calculator App](./images/screenshot1.jpg)
 
 ### Links
 
 - [GitHib repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Age%20calculator%20app)
-- [Live Site]()
+- [Live Site](https://fe-age-calculator-app.netlify.app/)
 
 ## My process
 

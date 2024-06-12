@@ -1,5 +1,5 @@
 const submitBtn = document.querySelector(".submit-btn")
-
+let now = new Date()
 
 function resetAllStyles() {
     const errorMessages = document.querySelectorAll(".error-msg")
@@ -55,7 +55,11 @@ function checkCardDate() {
     const isYearNumeric = /^\d+$/.test(year)
     const isMonthLengthValid = month.length === 2
     const isYearLengthValid = year.length === 2
-    if(month === "" || year === "" || !isMonthNumeric || !isYearNumeric || !isMonthLengthValid || !isYearLengthValid){
+    const currYear = now.getFullYear()%2000
+
+    if(month === "" || year === "" || !isMonthNumeric || !isYearNumeric || 
+    !isMonthLengthValid || !isYearLengthValid || parseInt(year)<currYear || 
+    parseInt(month)<1 || parseInt(month)>12){
         const errorDate = document.querySelector(".error-date")
         const errorMonthBorder = document.querySelector(".month-input")
         const errorYearBorder = document.querySelector(".year-input")
@@ -85,6 +89,17 @@ function checkCardDate() {
                 errorYearBorder.style.borderColor = "var(--Red-Errors)"
             }
             errorDate.innerText = "Must be 2 digits long" 
+        }
+        else if(parseInt(year)<currYear || parseInt(month)<1 || parseInt(month)>12){
+            if(parseInt(year)<currYear){
+                console.log(parseInt(year))
+                errorYearBorder.style.borderColor = "var(--Red-Errors)"
+                errorDate.innerText = "Enter a valid year"
+            }
+            if(parseInt(month)<1 || parseInt(month)>12){
+                errorMonthBorder.style.borderColor = "var(--Red-Errors)"
+                errorDate.innerText = "Enter a valid month"
+            }
         }
         return false
     }

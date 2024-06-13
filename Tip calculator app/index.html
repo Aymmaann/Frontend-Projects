@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <main>
+    <section class="heading-section">
+      <h1 class="heading">SPLI</h1>
+      <h1 class="heading">TTER</h1>
+    </section>
+
+    <section class="card-section">
+      <section class="option-section">
+        <div class="input-section">
+          <label for="Bill">Bill</label>
+          <input type="text" placeholder="0" id="bill-input">
+          <img src="./images/icon-dollar.svg" alt="" class="input-image">
+        </div>
+
+        <div class="tip-selection-section">
+          <label for="Tip">Select Tip %</label>
+
+          <div class="tip-options">
+              <div class="tip-box">
+                <p class="tip-amount">5</p>
+                <p>%</p>
+              </div>
+              <div class="tip-box">
+                <p class="tip-amount">10</p>
+                <p>%</p>
+              </div>
+              <div class="tip-box">
+                <p class="tip-amount">15</p>
+                <p>%</p>
+              </div>
+              <div class="tip-box">
+                <p class="tip-amount">25</p>
+                <p>%</p>
+              </div>
+              <div class="tip-box">
+                <p class="tip-amount">50</p>
+                <p>%</p>
+              </div>
+              <div class="tip-box custom-input">
+                <input type="text" placeholder="Custom" id="custom-tip">
+              </div>
+          </div>
+        </div>
+
+        <div class="input-section people-section">
+          <div class="people-labels">
+            <label for="Bill">Number of people</label>
+            <label class="error-msg">Can't be Zero</label>
+          </div>
+          <input type="text" placeholder="1" id="people-input">
+          <img src="./images/icon-person.svg" alt="" class="input-image">
+        </div>
+      </section>
+
+      <section class="result-section">
+        <div class="container">
+          <section class="tip-section">
+            <div class="text tip-text">
+              <p class="type">Tip Amount</p>
+              <p class="person-text">/ person</p>
+            </div>
+            <div class="amount">
+              <h1>$<span class="final-tip-amount">0.00</span></h1>
+            </div>
+          </section>
+
+          <section class="total-section">
+            <div class="text total-text">
+              <p class="type">Total</p>
+              <p class="person-text">/ person</p>
+            </div>
+            <div class="amount">
+              <h1>$<span class="final-total-amount">0.00</span></h1>
+            </div>
+          </section>
+
+          <section class="reset-section">
+            <button class="reset-btn">Reset</button>
+          </section>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

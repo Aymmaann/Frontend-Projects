@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [GitHub Repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Time%20tracking%20dashboard)
-- [Live Site]()
+- [Live Site](https://time-tracker-fe.netlify.app/)
 
 ## My Process
 

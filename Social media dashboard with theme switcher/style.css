@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Lime-Green: hsl(163, 72%, 41%);
+    --Bright-Red: hsl(356, 69%, 56%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+
+    /* Dark Theme */
+    --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+    --Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+    --Desaturated-Blue-Text: hsl(228, 34%, 66%);
+    --White-Text: hsl(0, 0%, 100%);
+
+    /* Light Theme */
+    --Toggle: hsl(230, 22%, 74%);
+    --White-BG: hsl(0, 0%, 100%);
+    --Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
+    --Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+    --Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+    --Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+p {
+    color: var(--Dark-Grayish-Blue-Text);
+    font-weight: 700;
+}
+
+.up {
+    color: var(--Lime-Green);
+}
+
+.down {
+    color: var(--Bright-Red);
+}
+
+main {
+    width: 1110px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 244px;
+    background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+    z-index: -1;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.header-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-area h1 {
+    font-size: 27px;
+}
+
+.heading-area p {
+    margin-top: 4px;
+}
+
+.toggle-section {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.toggle-button {
+    width: 48px;
+    height: 24px;
+    background-color: #aeb2cb;
+    border-radius: 12px;
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggle-circle {
+    background-color: var(--Very-Pale-Blue-Top-BG-Pattern);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.followers-section {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--Light-Grayish-Blue-Card-BG);
+}
+
+.follower-info-card {
+    width: 255px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 28px 60px 24px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    background-color: #e1e3f0;
+}
+
+.fb-card {
+    border-top: 4px solid var(--Facebook);
+}
+
+.twitter-card {
+    border-top: 4px solid var(--Twitter);
+}
+
+.instagram-card {
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+    border-top-right-radius: 4px;
+}
+
+.youtube-card {
+    border-top: 4px solid var(--YouTube);
+}
+
+.acc-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.follower-info-card h1 {
+    margin-top: 17px;
+    font-size: 55px;
+}
+
+.follower-info-card h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3.5px;
+    color: var(--Dark-Grayish-Blue-Text);
+}
+
+.follower-stat {
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.overview-section {
+    margin-top: 47px;
+    width: 100%;
+    text-align: left;
+}
+
+.overview-heading {
+    color: var(--Dark-Grayish-Blue-Text);
+    font-size: 24px;
+}
+
+.overview-card-section {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.overview-card {
+    width: 255px;
+    border-radius: 6px;
+    padding: 24px 31px 15px 23px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.name-and-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-section h1 {
+    font-size: 32px;
+}
+
+.result-section .follower-stat {
+    gap: 2px;
+    padding-bottom: 8px;
+}
+
+.toggle-active {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    justify-content: flex-start;
+}
+
+.toggle-circle-active {
+    background-color: var(--Very-Dark-Blue-Top-BG-Pattern);
+}
+
+@media screen and (max-width: 1110px) {
+    main {
+        width: 90%;
+    }
+    .followers-section {
+        justify-content: space-around;
+    }
+    .overview-card-section {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .header-section {
+        margin-top: 35px;
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+    }
+    .toggle-section {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 593px) {
+    .card {
+        width: 100%;
+    }
+}

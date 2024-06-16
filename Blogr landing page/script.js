@@ -1,10 +1,13 @@
 const options = document.querySelectorAll(".option")
 const hamburger = document.querySelector(".hamburger-icon")
+const mobileOptions = document.querySelectorAll(".mobile-option")
+
 
 options.forEach(option => {
     option.addEventListener("click", () => {
         const contentBox = document.querySelector(`.${option.innerText}`)
         const img = option.querySelector("img")
+        contentBox.style.display = "none"
 
         if(contentBox.style.display === "none") {
             options.forEach(optionClicked => {
@@ -23,6 +26,7 @@ options.forEach(option => {
     })
 })
 
+
 hamburger.addEventListener("click", () => {
     const mobileNav = document.querySelector(".mobile-menu")
     if(hamburger.src.includes("icon-hamburger.svg")) {
@@ -32,5 +36,20 @@ hamburger.addEventListener("click", () => {
     else {
         hamburger.src = "./images/icon-hamburger.svg"
         mobileNav.style.display = "none"
+        
     }
 }) 
+
+
+mobileOptions.forEach(option => {
+    option.addEventListener("click", () => {
+        const mobileContentBox = option.querySelector(".mobile-box")
+        mobileContentBox.classList.toggle("active")
+
+        mobileOptions.forEach(otherOption => {
+            if (otherOption !== option) {
+                otherOption.querySelector(".mobile-box").classList.remove("active")
+            }
+        })
+    })
+})

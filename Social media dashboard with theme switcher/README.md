@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [GitHub Repo](https://your-solution-url.com)
-- [Live Site]()
+- [Live Site](https://fe-social-media-dashboard.netlify.app/)
 
 ## Features
 

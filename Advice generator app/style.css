@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+
+    /* Neutral */
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Cyan);
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.card {
+    background-color: var(--Dark-Grayish-Blue);
+    width: 540px;
+    border-radius: 14px;
+    margin: 223px auto;
+    padding: 48px;
+    text-align: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.advice-number-section {
+    color: var(--Neon-Green);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.advice {
+    margin-top: 21px;
+}
+
+.divider {
+    margin: 39px 0 17px;
+}
+
+.toggle-button {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--Neon-Green);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.toggle-button:hover {
+    box-shadow: 0 0 10px 10px rgba(82, 255, 168, 0.4);
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        margin-top: 118px;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    body {
+        font-size: 24px;
+    }
+    .card {
+        width: 343px;
+        padding: 24px;
+        padding-top: 39px;
+    }
+    .advice {
+        margin-top: 25px;
+    }
+    .divider {
+        content: url("./images/pattern-divider-mobile.svg");
+        margin: 23px 0 32px;
+    }
+}

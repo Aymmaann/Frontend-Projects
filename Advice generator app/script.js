@@ -8,7 +8,7 @@ async function randomAdvice() {
     )
     const {id, advice} = fetchedAdvice.slip
     adviceNumber.textContent = id
-    adviceQuote.textContent = `"${advice}` 
+    adviceQuote.textContent = `"${advice}"` 
 }
 
 toggleButton.addEventListener("click", randomAdvice)

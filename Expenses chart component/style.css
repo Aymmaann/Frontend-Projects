@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Soft-Red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    /* Neutral */
+    --Dark-Brown: hsl(25, 47%, 15%);
+    --Medium-Brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-Pale-Orange: hsl(33, 100%, 98%);
+}
+
+h1 {
+    color: var(--Dark-Brown);
+}
+
+hr {
+    margin: 33px 0;
+    border: none;
+    background-color: var(--Cream);
+    height: 2px;
+}
+
+body {
+    background-color: var(--Cream);
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+}
+
+main {
+    margin: 182px auto;
+    width: 540px;
+}
+
+main section {
+    width: 100%;
+}
+
+.balance-section {
+    color: white;
+    background-color: var(--Soft-Red);
+    border-radius: 19px;
+    padding: 26px 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance-text-section p {
+    font-weight: 400;
+    color: var(--Very-Pale-Orange);
+}
+
+.balance-text-section h1 {
+    font-size: 33px;
+    margin-top: 8px;
+    font-weight: 700;
+    color: var(--Very-Pale-Orange);
+}
+
+.spending-section {
+    margin-top: 24px;
+    background-color: var(--Very-Pale-Orange);
+    border-radius: 19px;
+    padding: 37px 40px;
+}
+
+.spending-heading {
+    font-size: 31px;
+    letter-spacing: 1px;
+}
+
+.graph-section {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.bar {
+    background-color: var(--Soft-Red);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.bar:hover {
+    opacity: 0.7;
+}
+
+.day {
+    margin-top: 10px;
+    color: var(--Medium-Brown);
+    text-align: center;
+    font-size: 16px;
+}
+
+.hover {
+    display: none;
+    position: absolute;
+    left: -12.5px;
+    background-color: var(--Dark-Brown);
+    height: 40px;
+    width: 75px;
+    border-radius: 5px;
+    color: var(--Very-Pale-Orange);
+    font-weight: 700;
+    padding: 8px;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+}
+
+.bar:hover + .hover {
+    display: block;
+}
+
+.result-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    color: var(--Medium-Brown);
+}
+
+.month-spend {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.percent-section {
+    text-align: right;
+}
+
+.percent {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 578px) {
+    main {
+        padding: 16px;
+        margin: 66px auto;
+    }
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --linear-gradient-start: hsl(236, 72%, 79%);
+    --linear-gradient-end: hsl(237, 63%, 64%);
+    
+    /* Neutral */
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e3e3e3;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 32px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right, var(--linear-gradient-start), var(--linear-gradient-end));
+    font-weight: 700;
+    color: var(--very-light-grayish-blue);
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    border: 1px solid var(--linear-gradient-end);
+    background: none;
+    background-color: white;
+    color: var(--linear-gradient-end);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--very-light-grayish-blue);
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 0, 0 100%;
+}
+
+main {
+    width: 100%;
+    margin: 71px auto 103px;
+    text-align: center;
+}
+
+.heading {
+    color: var(--grayish-blue);
+}
+
+.toggle-section {
+    margin-top: 39px;
+    color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    cursor: pointer;
+}
+
+.toggle {
+    height: 32px;
+    width: 56px;
+    padding: 4px;
+    background: linear-gradient(to bottom right, var(--linear-gradient-start), var(--linear-gradient-end));
+    border-radius: 18px;
+    display: flex;
+    justify-content: flex-end;
+    transition: 0.2s ease-in-out;
+}
+
+.toggle-circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.toggle-active {
+    justify-content: flex-start;
+}
+
+.toggle:hover {
+    opacity: 0.6;
+}
+
+.card-section {
+    margin: 65px auto;
+    width: 1050px;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    height: 453px;
+    width: 350px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 12px;
+    padding: 33px 31px 31px;
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+.card1 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card2 {
+    height: 100%;
+    background: linear-gradient(var(--linear-gradient-start), var(--linear-gradient-end));
+    padding: 57px 31px 54px;
+    color: white;
+}
+
+.card3 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card-heading {
+    font-size: 19px;
+}
+
+.card-price-section {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--dark-grayish-blue);
+}
+
+.card2-price-section {
+    color: var(--very-light-grayish-blue);
+}
+
+.dollar {
+    font-size: 36px;
+}
+
+.card-price {
+    font-size: 70px;
+}
+
+.first-divider {
+    margin-top: 24px;
+}
+
+.features {
+    margin: 16px auto;
+}
+
+.card2-btn {
+    background: none;
+    background-color: var(--very-light-grayish-blue);
+    color: var(--linear-gradient-end);
+}
+
+.card2-btn:hover {
+    border-color: var(--very-light-grayish-blue);
+    background-color: #7277e0;
+    color: var(--very-light-grayish-blue);
+}
+
+@media screen and (max-width: 1080px) {
+    main {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .card-section {
+        flex-direction: column;
+        gap: 33px;
+        width: 100%;
+    }
+    .card1 {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .card2 {
+        height: 453px;
+        width: 350px;
+        padding: 33px 31px 31px;
+    }
+    .card3 {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        margin: 71px auto 40px;
+    }
+    .card {
+        width: 90%;
+    }
+}

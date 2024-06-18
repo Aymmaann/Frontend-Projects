@@ -66,12 +66,11 @@ Moving forward, I plan to focus on the following areas to further enhance my ski
 - [CSS-Tricks](https://css-tricks.com/): Great for learning CSS techniques and best practices.
 - [Frontend Mentor](https://www.frontendmentor.io/): Excellent for practicing frontend skills with realistic projects.
 
+  
 ## Author
 
-- Website - [Your Website](https://www.your-website.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Website - [My portfolio](https://ayman03-portfolio.netlify.app/)
+- Frontend Mentor - [@Aymmaann](https://www.frontendmentor.io/profile/Aymmaann)
 
 ## Acknowledgments
 

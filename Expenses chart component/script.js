@@ -1,4 +1,5 @@
 const bars = document.querySelectorAll(".bar")
+const days = document.querySelectorAll(".day")
 const hovers = document.querySelectorAll(".hover")
 const ratio = 2.87
 let maxAmount = -1
@@ -20,6 +21,15 @@ function setHoverValues(dataitem, barHeight) {
             hover.textContent = `$${dataitem.amount}`
             let offset = 39 + barHeight
             hover.style.bottom = `${offset}px`
+        }
+    })
+}
+
+
+function setDay(dayValue) {
+    days.forEach(day => {
+        if(day.classList.contains(`${dayValue}day`)) {
+            day.textContent = dayValue
         }
     })
 }
@@ -54,6 +64,7 @@ fetch('data.json')
                         maxAmount = dataitem.amount > maxAmount? dataitem.amount : maxAmount
                         bar.style.height = `${barHeight}px`
                         setHoverValues(dataitem, barHeight)
+                        setDay(dataitem.day)
                     }
                 })
                 if(dataitem.amount === maxAmount) {

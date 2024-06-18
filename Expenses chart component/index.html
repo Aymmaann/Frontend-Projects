@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+
+  <main>
+    <section class="balance-section">
+      <div class="balance-text-section">
+        <p>My balance</p>
+        <h1>$921.48</h1>
+      </div>
+
+      <div class="balance-image-section">
+        <img src="./images/logo.svg" alt="">
+      </div>
+    </section>
+
+    <section class="spending-section">
+      <h1 class="spending-heading">Spending - Last 7 days</h1>
+
+      <div class="graph-section">
+        <div class="graph">
+          <div class="hover mon-hover"></div>
+          <div class="bar mon"></div>
+          <p class="day">mon</p>
+        </div>
+
+        <div class="graph">
+          <div class="hover tue-hover"></div>
+          <div class="bar tue"></div>
+          <p class="day">tue</p>
+        </div>
+
+        <div class="graph">
+          <div class="hover wed-hover"></div>
+          <div class="bar wed"></div>
+          <p class="day">wed</p>
+        </div>
+
+        <div class="graph">
+          <div class="hover thu-hover"></div>
+          <div class="bar thu"></div>
+          <p class="day">thu</p>
+        </div>
+
+        <div class="graph">
+          <div class="hover fri-hover"></div>
+          <div class="bar fri"></div>
+          <p class="day">fri</p>
+        </div>
+
+        <div class="graph">
+          <div class="hover sat-hover"></div>
+          <div class="bar sat"></div>
+          <p class="day">sat</p>
+        </div>
+
+        <div class="graph">
+          <div class="hover sun-hover"></div>
+          <div class="bar sun"></div>
+          <p class="day">sun</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <section class="result-section">
+        <div class="amount">
+          <p class="text">Total this month</p>
+          <h1 class="month-spend">$478.33</h1>
+        </div>
+
+        <div class="percent-section">
+          <p class="percent">+2.4%</p>
+          <p class="text">from last month</p>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

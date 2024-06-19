@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+
+  <main>
+    <section class="text-section">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required. </p>
+    </section>
+
+    <section class="card-section">
+      <section class="selection-section">
+        <div class="top-section">
+          <div class="selection-section-heading">
+            <p class="pageviews">100k Pageviews</p>
+            <div class="selected-amount-section big-display">
+              <span class="selected-amount">$16.00</span>
+              <p class="plan-type">/ month</p>
+            </div>
+          </div>
+  
+          <div class="slide-container">
+            <input type="range" min="0.32" max="32" step="0.01" class="slider" id="Range">
+          </div>
+  
+          <div class="small-display">
+            <div class="small-display-amount-section">
+              <span class="selected-amount">$16.00</span>
+              <p class="plan-type">/ month</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="option-section">
+          <p>Monthly Billing</p>
+          <div class="option-toggle">
+            <div class="option-circle"></div>
+          </div>
+          <div class="yearly">
+            <p>Yearly Billing</p>
+            <div class="discount-section">
+              25% discount
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="plan-detail-section">
+        <div class="features">
+          <div class="feature">
+            <img src="./images/icon-check.svg" alt="">
+            <p>Unlimited websites</p>
+          </div>
+
+          <div class="feature">
+            <img src="./images/icon-check.svg" alt="">
+            <p>100% data ownership</p>
+          </div>
+
+          <div class="feature">
+            <img src="./images/icon-check.svg" alt="">
+            <p>Email reports</p>
+          </div>
+        </div>
+
+        <button>Start my trial</button>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [GitHub repo]](https://github.com/Aymmaann/Front-End-Development/tree/main/Easybank%20landing%20page)
+- [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Easybank%20landing%20page)
 - [Live Site](https://fe-easybank-landing-page.netlify.app/)
 
 ## My process

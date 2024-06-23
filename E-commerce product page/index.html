@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>E-commerce product page</title>
+</head>
+<body>
+
+  <main>
+    <nav>
+      <div class="nav-left-section">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="nav-options">
+          <ul>
+            <li>
+              <a href="" class="nav-item">Collections</a>
+              <div class="border-bottom"></div>
+            </li>
+
+            <li>
+              <a href="" class="nav-item">Men</a>
+              <div class="border-bottom"></div>
+            </li>
+
+            <li>
+              <a href="" class="nav-item">Women</a>
+              <div class="border-bottom"></div>
+            </li>
+
+            <li>
+              <a href="" class="nav-item">About</a>
+              <div class="border-bottom"></div>
+            </li>
+
+            <li>
+              <a href="" class="nav-item">Contact</a>
+              <div class="border-bottom"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav-right-section">
+        <div class="cart-section">
+          <a href=""><img src="./images/icon-cart.svg" alt="" class="nav-cart-icon"></a>
+
+          <div class="cart-amt-bubble">
+            <p class="prod-amt"></p>
+          </div>
+        </div>
+
+        <div class="cart-box">
+          <div class="cart-header">
+            <p>Cart</p>
+          </div>
+          <hr>
+
+          <div class="empty-order">
+            <p>Your cart is empty.</p>
+          </div>
+
+          <div class="order-section">
+            <div class="order">
+              <img src="./images/image-product-1.jpg" alt="" class="product">
+              <div class="name">
+                <p>Fall Limited Edition Sneakers</p>
+                <p>$125.00 x 
+                  <span class="order-amount">3</span> 
+                  <span class="order-total">$375.00</span>
+                </p>
+              </div>
+              <img src="./images/icon-delete.svg" alt="" class="delete-icon">
+            </div>
+            <button>Checkout</button>
+          </div>
+        </div>
+
+        <div class="profile">
+          <a href=""><img src="./images/image-avatar.png" alt="" class="profile-img"></a>
+        </div>
+      </div>
+    </nav>
+
+    <hr class="divider">
+
+    <section class="content">
+      <section class="image-section">
+        <div class="main-img">
+          <img src="./images/image-product-1.jpg" alt="" class="thumbnail-img">
+        </div>
+
+        <div class="other-img">
+          <div class="border">
+            <img src="./images/image-product-1.jpg" alt="" class="prod-img first-img">
+          </div>
+
+          <div class="border">
+            <img src="./images/image-product-2.jpg" alt="" class="prod-img">
+          </div>
+
+          <div class="border">
+            <img src="./images/image-product-3.jpg" alt="" class="prod-img">
+          </div>
+
+          <div class="border">
+            <img src="./images/image-product-4.jpg" alt="" class="prod-img">
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="company">Sneaker Company</div>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <div class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</div>
+        
+        <section class="price-section">
+          <h2 class="price">$125.00</h2>
+          <div class="discount">
+            <p>50%</p>
+          </div>
+        </section>
+
+        <p class="old-price">$250.00</p>
+
+        <section class="button-section">
+          <div class="amount-toggle">
+            <img src="./images/icon-minus.svg" alt="" class="minus">
+            <p class="amount">0</p>
+            <img src="./images/icon-plus.svg" alt="" class="plus">
+          </div>
+
+          <div class="add-to-cart-btn">
+            <img src="./images/icon-cart.svg" alt="" class="cart-icon">
+            <p>Add to cart</p>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <div class="modal">
+    <div class="close">
+      <img src="./images/orange-close-icon.svg" alt="">
+    </div>
+
+    <div class="next option">
+      <img src="./images/icon-next.svg" alt="">
+    </div>
+
+    <div class="prev option">
+      <img src="./images/icon-previous.svg" alt="">
+    </div>
+
+    <div class="modal-content">
+      <img src="./images/image-product-1.jpg" alt="">
+    </div>
+
+    <div class="other-img">
+      <div class="border">
+        <img src="./images/image-product-1.jpg" alt="" class="prod-img first-img">
+      </div>
+
+      <div class="border">
+        <img src="./images/image-product-2.jpg" alt="" class="prod-img">
+      </div>
+
+      <div class="border">
+        <img src="./images/image-product-3.jpg" alt="" class="prod-img">
+      </div>
+
+      <div class="border">
+        <img src="./images/image-product-4.jpg" alt="" class="prod-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/189bc17b67.js" crossorigin="anonymous"></script>
+</body>
+</html>

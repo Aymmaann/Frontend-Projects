@@ -12,6 +12,9 @@
   <main>
     <nav>
       <div class="nav-left-section">
+        <div class="hamburger">
+          <img src="./images/icon-menu.svg" alt="" class="hamburger-icon">
+        </div>
         <div class="logo">
           <img src="./images/logo.svg" alt="">
         </div>
@@ -92,6 +95,13 @@
       <section class="image-section">
         <div class="main-img">
           <img src="./images/image-product-1.jpg" alt="" class="thumbnail-img">
+          <div class="mobile-next option mobile-next">
+            <p class="slider">></p>
+          </div>
+      
+          <div class="mobile-prev option mobile-prev">
+            <p class="slider"><</p>
+          </div>
         </div>
 
         <div class="other-img">
@@ -142,40 +152,54 @@
         </section>
       </section>
     </section>
+
+    <div class="mobile-nav-container">
+      <div class="mobile-nav">
+        <img src="./images/icon-close.svg" alt="" class="mobile-nav-close-icon">
+        <ul class="mobile-nav-list">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
   </main>
 
+
   <div class="modal">
-    <div class="close">
-      <img src="./images/orange-close-icon.svg" alt="">
-    </div>
-
-    <div class="next option">
-      <img src="./images/icon-next.svg" alt="">
-    </div>
-
-    <div class="prev option">
-      <img src="./images/icon-previous.svg" alt="">
-    </div>
-
     <div class="modal-content">
-      <img src="./images/image-product-1.jpg" alt="">
+      <div class="close">
+        <p class="close-btn">x</p>
+      </div>
+
+      <img src="./images/image-product-1.jpg" alt="" class="modal-img">
+
+      <div class="next modal-option">
+        <p class="slider">></p>
+      </div>
+  
+      <div class="prev modal-option">
+        <p class="slider"><</p>
+      </div>
     </div>
 
-    <div class="other-img">
+    <div class="modal-other-img">
       <div class="border">
-        <img src="./images/image-product-1.jpg" alt="" class="prod-img first-img">
+        <img src="./images/image-product-1.jpg" alt="" class="modal-prod-img first-img">
       </div>
 
       <div class="border">
-        <img src="./images/image-product-2.jpg" alt="" class="prod-img">
+        <img src="./images/image-product-2.jpg" alt="" class="modal-prod-img">
       </div>
 
       <div class="border">
-        <img src="./images/image-product-3.jpg" alt="" class="prod-img">
+        <img src="./images/image-product-3.jpg" alt="" class="modal-prod-img">
       </div>
 
       <div class="border">
-        <img src="./images/image-product-4.jpg" alt="" class="prod-img">
+        <img src="./images/image-product-4.jpg" alt="" class="modal-prod-img">
       </div>
     </div>
   </div>

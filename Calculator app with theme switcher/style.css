@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Theme 1 */
+    --theme-1-main-bg: hsl(222, 26%, 31%);
+    --theme-1-toggle-bg: hsl(223, 31%, 20%);
+    --theme-1-keypad-bg: hsl(223, 31%, 20%);
+    --theme-1-screen-bg: hsl(224, 36%, 15%);
+
+    --theme-1-key-bg: hsl(225, 21%, 49%);
+    --theme-1-key-shadow: hsl(224, 28%, 35%);
+    --theme-1-key-hover: #a2b3e1;
+
+    --theme-1-equal-bg: hsl(6, 63%, 50%);
+    --theme-1-equal-shadow: hsl(6, 70%, 34%);
+    --theme-1-equal-hover: #f96b5b;
+    --theme-1-equal-text: hsl(0, 0%, 100%);
+
+    --theme-1-option-bg: hsl(30, 25%, 89%);
+    --theme-1-option-shadow: hsl(28, 16%, 65%);
+    --theme-1-option-text: hsl(221, 14%, 31%);
+
+    /* --theme-1-very-dark-grayish-blue: hsl(221, 14%, 31%); */
+    --theme-1-white: hsl(0, 0%, 100%);
+    --theme-1-heading-text: hsl(0, 0%, 100%);
+
+    /* Theme 2 */
+    --theme-2-main-bg: hsl(0, 0%, 90%);
+    --theme-2-toggle-bg: hsl(0, 5%, 81%);
+    --theme-2-keypad-bg: hsl(0, 5%, 81%);
+    --theme-2-screen-bg: hsl(0, 0%, 93%);
+
+    --theme-2-key-bg: hsl(185, 42%, 37%);
+    --theme-2-key-shadow: hsl(185, 58%, 25%);
+    --theme-2-key-hover: #61b5bd;
+
+    --theme-2-equal-bg: hsl(25, 98%, 40%);
+    --theme-2-equal-shadow: hsl(25, 99%, 27%);
+    --theme-2-equal-hover: #ff8a37;
+    --theme-2-equal-text: hsl(0, 0%, 100%);
+
+    --theme-2-option-bg: hsl(45, 7%, 89%);
+    --theme-2-option-shadow: hsl(35, 11%, 61%);
+    --theme-2-option-text: hsl(60, 10%, 19%);
+
+    /* --theme-2-very-dark-grayish-yellow: hsl(60, 10%, 19%); */
+    --theme-2-heading-text: hsl(60, 10%, 19%);
+    --theme-2-white: hsl(0, 0%, 100%);
+
+    /* Theme 3 */
+    --theme-3-main-bg: hsl(268, 75%, 9%);
+    --theme-3-toggle-bg: hsl(268, 71%, 12%);
+    --theme-3-keypad-bg: hsl(268, 71%, 12%);
+    --theme-3-screen-bg: hsl(268, 71%, 12%);
+
+    --theme-3-key-bg: hsl(281, 89%, 26%);
+    --theme-3-key-shadow: hsl(285, 91%, 52%);
+    --theme-3-key-hover: #8631af;
+
+    --theme-3-equal-bg: hsl(176, 100%, 44%);
+    --theme-3-equal-shadow: hsl(177, 92%, 70%);
+    --theme-3-equal-hover: #93fff9;
+    --theme-3-equal-text: hsl(198, 20%, 13%);
+
+    --theme-3-option-bg: hsl(268, 47%, 21%);
+    --theme-3-option-shadow: hsl(290, 70%, 36%);
+    --theme-3-option-text: hsl(52, 100%, 62%);
+
+    /* --theme-3-light-yellow: hsl(52, 100%, 62%); */
+    --theme-3-heading-text: hsl(52, 100%, 62%);
+    --theme-3-very-dark-blue: hsl(198, 20%, 13%);
+    --theme-3-white: #6b33ac;
+}
+
+
+body {
+    background-color: var(--theme-1-main-bg);
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+}
+
+main {
+    width: 540px;
+    margin: 96px auto;
+}
+
+.theme-switcher-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--theme-1-heading-text);
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: flex-end;
+    gap: 27px;
+}
+
+.name {
+    padding-left: 8px;
+    font-size: 32px;
+}
+
+.theme {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.theme-section p {
+    margin: 0 9px;
+    letter-spacing: 6px;
+    font-size: 16px;
+}
+
+.theme-toggle {
+    margin-top: 6px;
+    width: 71px;
+    height: 26px;
+    background-color: var(--theme-1-toggle-bg);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.toggle-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--theme-1-equal-bg);
+    transition: 0.2s ease-in-out;
+}
+
+.toggle-circle:hover {
+    background-color: var(--theme-1-equal-hover);
+}
+
+.screen-section {
+    margin-top: 32px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    font-size: 60px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 35px 0;
+    text-align: right;
+    background-color: var(--theme-1-screen-bg);
+    color: var(--theme-1-heading-text);
+    height: 128px;
+}
+
+.number-display {
+    font-family: "League Spartan", sans-serif;
+}
+
+.keypad-section {
+    margin-top: 24px;
+    padding: 32px;
+    border-radius: 12px;
+    width: 100%;
+    background-color: var(--theme-1-keypad-bg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+.key {
+    border-radius: 10px;
+    height: 60px;
+    background-color: var(--theme-1-option-bg);
+    border-bottom: 4px solid var(--theme-1-option-shadow);
+    box-sizing: 4px 4px white;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    font-size: 40px;
+    padding: 14px;
+    color: var(--theme-1-option-text);
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: var(--theme-1-white);
+}
+
+.reset-key, .equal-key {
+    grid-column: span 2;
+}
+
+.reset-key, .del-key {
+    background-color: var(--theme-1-key-bg);
+    border-bottom: 4px solid var(--theme-1-key-shadow);
+    padding: 19px;
+    font-size: 28px;
+    color: var(--theme-1-white);
+    text-transform: uppercase;
+}
+
+.reset-key:hover, .del-key:hover {
+    background-color: var(--theme-1-key-hover);
+}
+
+.equal-key {
+    background-color: var(--theme-1-equal-bg);
+    border-bottom: 4px solid var(--theme-1-equal-shadow);
+    color: var(--theme-1-equal-text);
+}
+
+.equal-key:hover {
+    background-color: var(--theme-1-equal-hover);
+}
+
+.multiplication {
+    padding: 9px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 0;
+        padding: 31px 24px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .screen-section {
+        font-size: 45px;
+        height: 88px;
+    }
+    .keypad-section {
+        gap: 13px;
+        padding: 24px;
+    }
+    .key {
+        font-size: 35px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9px;
+    }
+    .multiplication {
+        padding-top: 0;
+    }
+    .reset-key, .del-key {
+        padding: 0;
+        font-size: 20px;
+    }
+    .equal-key {
+        padding-top: 5px;
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .screen-section {
+        padding: 5px 25px 0;
+        font-size: 38px;
+    }
+}

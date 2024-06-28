@@ -48,6 +48,14 @@ document.addEventListener('DOMContentLoaded' ,() => {
     equalKey.addEventListener("click", () => {
         calculateResult()
     })
+
+
+    document.addEventListener("keydown", (event) => {
+        if(event.key === "Enter") {
+            event.preventDefault()
+            calculateResult()
+        }
+    })
     
     
     numKeys.forEach(numkey => {
@@ -153,7 +161,7 @@ function performOperation(operation, num1, num2) {
             num1 = num1 / num2
             num2 = 0
             break
-            
+
         default: 
             break
     }

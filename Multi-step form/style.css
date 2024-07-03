@@ -47,7 +47,6 @@ main {
     border-radius: 20px;
     padding: 16px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
 }
 
 .step {
@@ -200,7 +199,6 @@ input::placeholder {
 
 .step-2-option {
     width: 136px;
-    /* height: 158px; */
     border: 1px solid var(--cool-gray);
     border-radius: 10px;
     padding: 19px 15px;
@@ -516,8 +514,87 @@ input::placeholder {
 }
 
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 913px) {
+    .step-5-display {
+        width: 230px;
+        padding: 40px 20px 40px 32px;
+    }
     .step-form-section {
-        padding: 16px 30px;
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    main {
+        z-index: 5;
+        width: 92%;
+        margin-top: 99px;
+        padding: 0;
+        height: auto;
+    }
+    .steps-display {
+        z-index: -1;
+        position: absolute;
+        background-image: url("./images/bg-sidebar-mobile.svg");
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 172px;
+        background-repeat: no-repeat;
+        flex-direction: row;
+        justify-content: center;
+        background-size: cover;
+        border-radius: 0;
+        padding: 0;
+    }
+    .step-number {
+        margin-top: 32px;
+    }
+    .step-name {
+        display: none;
+    }
+    .step-form-section {
+        padding: 16px 24px 24px;
+        width: 426px;
+        justify-content: flex-start;
+    }
+    .step {
+        height: auto;
+    }
+    .step-2-button-area {
+        margin-top: 50px;
+    }
+    .step-5-text-section {
+        padding: 75px 20px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .step-2-option-section {
+        margin-top: 22px;
+        flex-direction: column;
+    }
+    .step-2-option {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+    }
+    .option-text {
+        margin-top: 0;
+    }
+    .step-heading {
+        font-size: 28px;
+    }
+    .step-3-option {
+        padding: 15px;
+    }
+    .left-section {
+        gap: 15px;
+    }
+    .bill-section {
+        padding: 20px 16px;
     }
 }

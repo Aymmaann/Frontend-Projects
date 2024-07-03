@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Step 1
     const step1Btn = document.querySelector(".step-1-btn")
     const phoneNumber = document.querySelector("#phone")
+    let loginSuccessful = false
 
 
     // Step 2 
@@ -94,8 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
         nextStep.style.display = "flex"
     })
 
-    step1Btn.addEventListener("click", () => {
-        currStepNumber = goToNextStep(currStepNumber)
+    step1Btn.addEventListener("click", (event) => {
+        event.preventDefault()
+        loginSuccessful = validateLoginCredentials()
+        if(loginSuccessful) {
+            currStepNumber = goToNextStep(currStepNumber)
+        }
     })
 
 
@@ -123,6 +128,82 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
+    function validateLoginCredentials() {
+        let isNameValid = validateName()
+        let isEmailValid = validateEmail()
+        let isNumberValid = validateNumber()
+        return isNameValid && isEmailValid && isNumberValid
+    }
+
+    function checkIsEmpty(input, errorMsg) {
+        if(!input.value) {
+            errorMsg.textContent = "This field is required"
+            errorMsg.style.display = "flex"
+            input.style.borderColor = "var(--strawberry-red)"
+            return true
+        }
+        else {
+            errorMsg.style.display = "none"
+            input.style.borderColor = "var(--cool-gray)"
+            return false
+        }
+    }
+
+    function validateName() {
+        const nameInput = document.querySelector("#name")
+        const errorMsg = document.querySelector(".error-msg-name")
+        return !checkIsEmpty(nameInput, errorMsg)
+    }
+
+
+    function validateEmail() {
+        const emailInput = document.querySelector("#email")
+        const errorMsg = document.querySelector(".error-msg-email")
+        let isEmpty = checkIsEmpty(emailInput, errorMsg)
+
+        if(!isEmpty) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let isValid = regex.test(emailInput.value);
+            if(!isValid) {
+                errorMsg.style.display = "flex"
+                errorMsg.textContent = "Enter a valid email"
+                emailInput.style.borderColor = "var(--strawberry-red)"
+            }
+            return isValid
+        }
+        return isEmpty
+    }
+
+    function validateNumber() {
+        const phoneInput = document.querySelector("#phone")
+        const errorMsg = document.querySelector(".error-msg-number")
+        let isEmpty = checkIsEmpty(phoneInput, errorMsg)
+        
+        if(!isEmpty) {
+            let isValid = isNumeric(phoneInput.value)
+            let isLengthValid = true
+            if(phoneInput.value.length != 10) {
+                errorMsg.style.display = "flex"
+                errorMsg.textContent = "Please enter a 10-digit phone number"
+                phoneInput.style.borderColor = "var(--strawberry-red)"
+                isValid = false
+                isLengthValid = false
+            }
+            if(!isValid && isLengthValid) {
+                errorMsg.style.display = "flex"
+                errorMsg.textContent = "Enter a valid number"
+                phoneInput.style.borderColor = "var(--strawberry-red)"
+            }
+            return isValid
+        }
+        return isEmpty
+    }
+
+    function isNumeric(input) {
+        const regex = /^[0-9]+$/;
+        return regex.test(input)
+    }
+
     function setTickIcon(element) {
         const clickBox = element.querySelector(".click-option")
         if(clickBox.innerHTML === "") {
@@ -145,7 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currStepNumber++
         const nextStep = document.querySelector(`.step-${currStepNumber}`)
         nextStep.style.display = "flex"
-        console.log(currStepNumber)
         return currStepNumber
     }
 
@@ -247,10 +327,5 @@ document.addEventListener('DOMContentLoaded', () => {
             addOn.style.display = "none"
             addOn.remove()
         })
-    }
-
-
-    function checkNumber() {
-        
     }
 })

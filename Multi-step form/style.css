@@ -125,11 +125,24 @@ main {
     font-weight: 400;
 }
 
+.label-area, .other-label-area {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .label {
     font-size: 14px;
-    font-weight: 400; 
+    font-weight: 500; 
     color: var(--marine-blue);
-    margin-top: 38px;
+}
+
+.error-msg-name, .error-msg-email, .error-msg-number {
+    display: none;
+    color: var(--strawberry-red);
+    font-size: 14px;
+    font-weight: 700;
 }
 
 input {
@@ -148,7 +161,11 @@ input::placeholder {
     font-weight: 400;
 }
 
-.other-label {
+.error {
+    border-color: var(--strawberry-red);
+}
+
+.other-label-area {
     margin-top: 24px;
 }
 
@@ -473,4 +490,34 @@ input::placeholder {
 
 .step-5-text-section .description {
     line-height: 1.8rem;
+}
+
+
+@media screen and (max-width: 960px) {
+    main {
+        width: 95%;
+    }
+    .steps-display, .step-5-display {
+        width: 230px;
+        padding: 40px 10px 40px 32px;
+    }
+    .step-form-section {
+        padding: 16px 60px;
+    }
+    .step-2-option-section {
+        gap: 10px;
+    }
+    .step-2-option {
+        width: 100%;
+    }
+    .step-1-button-area {
+        margin-top: 60px;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .step-form-section {
+        padding: 16px 30px;
+    }
 }

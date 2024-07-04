@@ -597,4 +597,7 @@ input::placeholder {
     .bill-section {
         padding: 20px 16px;
     }
+    .toggle-section {
+        margin-top: 24px;
+    }
 }

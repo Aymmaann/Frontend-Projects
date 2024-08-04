@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/Aymmaann/Front-End-Development/tree/main/Responsive%20News%20homepage)
-- Live Site URL: [Live site](https://responsive-news-homepage-fe-mentor.netlify.app/m)
+- Live Site URL: [Live site](https://responsive-news-homepage-fe-mentor.netlify.app/)
 
 ## My process
 
